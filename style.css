@@ -129,18 +129,17 @@ a .learn{
   height: 400px;
 }
 
-a .learnmore{
-  color: black;
-}
-
-.learnmore{
+#content .learnmore{
   font-weight: 100;
   border: 1px solid black;
   width: 100px;
   text-align: center;
   border-radius: 20px;
   transition: color .3s ease-in-out, box-shadow .5s ease-in-out;
+}
 
+a .learnmore{
+  color: black;
 }
 
 .learnmore:hover{
@@ -149,9 +148,24 @@ a .learnmore{
 
 }
 
-.col-lg-4 .ilang{
+.content .ilang{
   color: white;
-  border-bottom: 0.1px solid black ;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.3) ;
+}
+
+.row{
+  display: flex;
+  align-self: flex-start ;
+}
+
+.row .col-sm{
+  margin: 0 auto;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.row .col-sm p {
+  text-align: start;
 }
 
 
@@ -187,13 +201,13 @@ footer .container{
 
 /* mobile */
 @media (max-width: 768px ){
-  .justify-content-end{
+  .bottom{
     display: flex;
     flex-direction: column-reverse;
   }
-  
-  .col-lg-4 p{
-    margin-top: 1rem;
+
+  #content a {
+    margin: auto;
   }
 }
 
